@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&display=swap");
+
+body {
+  font-family: "Assistant", sans-serif;
+  background-color: #eee;
+}
+
+.milestone {
+  color: #b6d7f0;
+}
+
+.important {
+  text-decoration: underline;
+}
+
+.milestone-card {
+  display: inline-block;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px 5px rgb(83, 123, 255);
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 24px 8px;
+}
+
+button:hover {
+  background-color: lightgreen;
+}
+
+button {
+  padding: 4px;
+  border-radius: 4px;
+}
+
+input:focus {
+  background-color: lightgray;
+}
+
+a:hover {
+  color: #2a505a;
+}
