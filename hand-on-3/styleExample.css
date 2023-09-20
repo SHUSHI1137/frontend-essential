@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #eee;
+}
+
+/* * Navbar styles */
+
+nav {
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.menu-container {
+  margin: 0px auto;
+  width: 80%;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 14px;
+}
+
+.menu-container > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 24px;
+  color: green;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: grey;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* * container */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  margin: 36px auto 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+/* * Section */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 26px;
+}
+
+section > p {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* * Item */
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: max-content;
+  gap: 16px;
+}
+
+.item {
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.title + p {
+  font-size: 16px;
+}
