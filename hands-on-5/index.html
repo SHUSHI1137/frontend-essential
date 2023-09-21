@@ -8,21 +8,24 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div>
-      <p>My To Do List</p>
-    </div>
-    <form>
-      <label for="task"></label>
-      <input type="text" id="task" />
-      <button id="add-task">Add</button>
-    </form>
-    <div class="task-list">
-      <ul id="task-item">
-        <li>
-          Learn Coding
-          <img src="trash.svg" class="trash" />
-        </li>
-      </ul>
-    </div>
+    <main>
+      <header>
+        <h1>My Todo List</h1>
+        <form>
+          <label for="task"></label>
+          <input type="text" id="task" placeholder="To do list...." />
+          <button id="add-task">Add</button>
+        </form>
+      </header>
+
+      <div class="task-list">
+        <ul id="task-item">
+          <li>
+            Learn Coding
+            <img src="trash.svg" class="trash" />
+          </li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>

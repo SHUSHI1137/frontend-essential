@@ -1,8 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;700&family=Exo+2:ital,wght@0,700;1,200&family=Quicksand:wght@300;400;600;700&display=swap");
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  margin: 0;
+  font-family: "Assistant", sans-serif;
+  font-family: "Exo 2", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background-color: #176b87;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 30%;
+  height: auto;
+  padding: 5px;
+  font-size: 18px;
+}
+
+ul {
+  padding-inline-start: 0;
+  width: 40%;
+  margin: 0 auto;
+  text-indent: 30px;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  list-style-type: none;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.check::before {
+  content: "";
+  position: absolute;
+  border-color: green;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-top: 16px;
+  box-shadow: 0 0 10px 5px rgb(0 0 0 / 0.1);
+  padding: 16px 12px;
+  border-radius: 8px;
+  list-style-position: inside;
+  margin: 24px 8px;
+}
+
+li :hover {
+  cursor: pointer;
+}
+
 .check {
   text-decoration: line-through;
+  padding: 6px;
+  background-color: #b0d9b1;
 }
 
 .trash {
   width: 20px;
   height: 20px;
+}
+
+button {
+  padding: 7px;
+  width: 5%;
+  background: ivory;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
 }
