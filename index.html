@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Milestone</title>
+    <script src="script.js"></script>
 </head>
 <body>
 <nav>
@@ -20,7 +21,7 @@
         <!-- * Frontend Milestone -->
         <div class="milestone-card">
             <h2 class="">Frontend Milestones!</h2>
-            <ol>
+            <ol id="frontend-milestone">
                 <li>JavaScript</li>
                 <li>Basic Website</li>
                 <li>Basic CSS</li>
@@ -34,7 +35,7 @@
         <!-- * Backend Milestone -->
         <div class="milestone-card">
             <h2 class="">Backend Milestones!</h2>
-            <ol>
+            <ol id="backend-milestone">
                 <li>Node.js</li>
                 <li>Framework : Express</li>
                 <li>Framework : NestJS</li>
@@ -48,22 +49,21 @@
         </div>
     </div>
 
-    <center>
         <div>
             <p>Form</p>
                 <form>
-                    <label for="email">Email:</label>
-                    <input type="email" id="username" class:="input:focus" required>
-
-                    <label for="password">Password:</label>
-                    <input type="text" id="password" class:="input:focus" required> <br /> <br />
-
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox">Remember Login?</label>
-
-                    <button type="submit" class="button button:hover" value="login">Login</button>
+                    <label for="frontend">Add Frontend Milestone:</label>
+                    <input type="text" id="frontend">
+                    <button id="add-front">Submit</button>
                 </form>
-        </div>
-    </center>    
+                <br />
+
+                <form>
+                    <label for="backend">Add Backend Milestone:</label>
+                    <input type="text" id="backend">
+                    <button id="add-back">Submit</button>
+                </form>
+        </div> 
 </body>
 </html>
+
