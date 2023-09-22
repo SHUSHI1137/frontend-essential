@@ -7,6 +7,7 @@ const main = () => {
     e.preventDefault();
     newlistTask = document.createElement("li");
     newlistTask.textContent = taskInput.value;
+    taskInput.value = "";
 
     const trashIcon = document.createElement("img");
     trashIcon.setAttribute("src", "trash.svg");
