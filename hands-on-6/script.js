@@ -1,3 +1,4 @@
+// receive information for each course and create html for display
 const coursesInfo = (data) => {
   const { courseNo, abbrName, department, credit, totalSeats, genEdType } =
     data;
@@ -15,13 +16,17 @@ const coursesInfo = (data) => {
 };
 
 const main = async () => {
+  // get course detail and fetch is called to get data from the API
   const result = await fetch("https://api.minireg.thanayut.in.th/courses")
     .then((response) => response.json())
     .catch((error) => error.json());
+
+  // after the information has been received check if there are any errors or not. If there is an error in the console
   if (result?.error) {
     console.log(result?.error);
     return;
   }
+  // If there are no errors reduce is used to loop through the html data for each course created by coursesInfo and insert it into #course-list in the html
   const coursesData = result?.courses.reduce((previous, current) => {
     previous += coursesInfo(current);
     return previous;
